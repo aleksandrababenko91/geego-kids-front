@@ -1,7 +1,9 @@
 'use client'
-import { usePathname } from "next/navigation";
+import { usePathname } from "/src/navigation";
 import Footer from "../shared/Footer/Footer";
 import Header from "../shared/Header/Header";
+
+
 
 export default function LayoutProvider({children}) {
   const pathname = usePathname()
@@ -15,9 +17,7 @@ export default function LayoutProvider({children}) {
         <>
           <Header />
           {children}
-          <Footer />
-          
-
+          <Footer />  
         </>
       }
     </div>

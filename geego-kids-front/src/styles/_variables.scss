@@ -1,15 +1,15 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Montserrat:wght@400;500;600&display=swap");
+@import url("https://p.typekit.net/p.css?s=1&k=qaa0fud&ht=tk&f=18085.24349.24354.24355.28165.35767.35914&a=5050865&app=typekit&e=css");
 
-
-$fontFamily: ("Open Sans", sans-serif);
-
+$fontFamily: ("Gibson", sans-serif);
 
 //=Primary colors=======================================================================================================================================================
-$primary-footer: #1B293A;
-$primary-primary: #958674;
-$primary-hover: #dac4a9;
-$primary-fon: #1B293A;
-$primary-fon-card: rgb(12, 4, 54);
+$primary-footer: #032741;
+$primary-primary: #032741;
+$primary-hover: #a9d8da;
+$primary-fon: #DFEAEF;
+$primary-fon-card-1: rgb(0, 116, 172);
+$primary-fon-card-2: rgb(235, 106, 57);
+$primary-fon-card-3: rgb(107, 55, 124);
 $primary-fon-burger: #dac4a9;
 $primary-border: #958674;
 //====Gradient Button====================================================================================================================================================
@@ -39,7 +39,7 @@ $button-gradient: linear-gradient(
   $button-gradient3 76%,
   $button-gradient4 100%,
 );
-//=Gradient Icons=======================================================================================================================================================
+// //=Gradient Icons=======================================================================================================================================================
 $icon-gradient1: #e37cc1;
 $icon-gradient2: #e231a8;
 $icon-gradient3: #9d2f79;
@@ -52,12 +52,12 @@ $icons-gradient: linear-gradient(
   $icon-gradient3 76%,
   $icon-gradient4 100%
 );
-//=Gradient Fon=======================================================================================================================================================
-$fon-gradient1: #db97c5;
-$fon-gradient2: #cc4fa3;
-$fon-gradient3: #a03a7e;
-$fon-gradient4: #6d2656;
-$fon-gradient5: #490735;
+//=Gradient Fon (TURCO Dark)=======================================================================================================================================================
+$fon-gradient1: #CDE8E8;
+$fon-gradient2: #30B8B7;
+$fon-gradient3: #1A9E9D;
+$fon-gradient4: #176968;
+$fon-gradient5: #072C2C;
 
 $primary-gradient: linear-gradient(
   139deg,
@@ -76,19 +76,10 @@ $secondary-hover: #ededed;
 $secondary-error: #f94949;
 $secondary-positive: #1ba161;
 //=Fonts=======================================================================================================================================================
-$counter-font: (
-  "font-family": (
-    "Open Sans",
-    sans-serif,
-  ),
-  "font-size": 48px,
-  "letter-spacing": 0.01em,
-  "font-weight": 600,
-  "line-height": 150%,
-);
+
 $h1-font: (
   "font-family": (
-    "Open Sans",
+    "Gibson",
     sans-serif,
   ),
   "font-size": 40px,
@@ -99,7 +90,7 @@ $h1-font: (
 
 $h2-font: (
   "font-family": (
-    "Montserrat",
+    "Gibson",
     sans-serif,
   ),
   "font-size": 24px,
@@ -110,7 +101,7 @@ $h2-font: (
 
 $h3-font: (
   "font-family": (
-    "Open Sans",
+    "Gibson",
     sans-serif,
   ),
   "font-size": 18px,
@@ -122,7 +113,7 @@ $h3-font: (
 
 $h4-font: (
   "font-family": (
-    "Montserrat",
+    "Gibson",
     sans-serif,
     ),
     "font-weight": 700,
@@ -134,7 +125,7 @@ $h4-font: (
 
 $h5-font: (
   "font-family": (
-    "Open Sans",
+    "",
     sans-serif,
   ),
   "font-size": 32px,

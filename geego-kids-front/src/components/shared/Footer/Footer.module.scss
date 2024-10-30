@@ -4,3 +4,12 @@
   background-color: var.$primary-footer;
 }
 
+.block {
+  margin: 0 auto;
+  padding: 0 15px;
+  max-width: 100%;
+  max-width: 1024px;
+  @media (min-width: 1025px) {
+    max-width: 1680px;
+  }
+}
