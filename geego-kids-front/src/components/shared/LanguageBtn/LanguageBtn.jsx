@@ -7,6 +7,7 @@ import { usePathname, useRouter } from "@/navigation";
 import Image from "next/image";
 import style from './LanguageBtn.module.scss';
 import clsx from "clsx";
+import arrow from '../../../../public/images/arrow.svg'
 
 
 
@@ -65,11 +66,12 @@ export default function LanguageBtn() {
         onClick={() => setIsOpen(!isOpen)}
         className={clsx(style.btn_lang, isOpen && style._active)}
         type="button"
+        aria-label={ariaLabelsText(currentLocale).btn_lang}
 
       >
         <span>{currentLocale.toUpperCase()}</span>
         <span className={clsx(style.btn_icon, isOpen && style.btn_icon_up)}>
-          {/* <Image src={arrow} alt="language arrow" width={15} height={15} /> */}
+          <Image src={arrow} alt="language arrow" width={15} height={15} />
         </span>
       </button>
       {isOpen && (
