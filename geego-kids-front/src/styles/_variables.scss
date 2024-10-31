@@ -79,7 +79,7 @@ $secondary-positive: #1ba161;
 
 $h1-font: (
   "font-family": (
-    "Gibson",
+    "canada-type-gibson",
     sans-serif,
   ),
   "font-size": 40px,
@@ -90,7 +90,7 @@ $h1-font: (
 
 $h2-font: (
   "font-family": (
-    "Gibson",
+    "canada-type-gibson",
     sans-serif,
   ),
   "font-size": 24px,
@@ -101,7 +101,7 @@ $h2-font: (
 
 $h3-font: (
   "font-family": (
-    "Gibson",
+    "canada-type-gibson",
     sans-serif,
   ),
   "font-size": 18px,
@@ -113,7 +113,7 @@ $h3-font: (
 
 $h4-font: (
   "font-family": (
-    "Gibson",
+    "canada-type-gibson",
     sans-serif,
     ),
     "font-weight": 700,
@@ -136,7 +136,7 @@ $h5-font: (
 
 $h6-font: (
   "font-family": (
-    "Montserrat",
+    "Gibson",
     sans-serif,
     ),
     "font-weight": 600,
@@ -160,7 +160,7 @@ $h7-font: (
 
 $text-20-font: (
   "font-family": (
-    "Montserrat",
+    "Gibson",
     sans-serif,
   ),
   "font-size": 20px,
@@ -171,7 +171,7 @@ $text-20-font: (
 
 $text-16-font: (
   "font-family": (
-    "Montserrat",
+    "Gibson",
     sans-serif,
   ),
   "font-size": 16px,
@@ -182,7 +182,7 @@ $text-16-font: (
 
 $text-14-font: (
   "font-family": (
-    "Montserrat",
+    "Gibson",
     sans-serif,
   ),
   "font-weight": 400,
@@ -193,7 +193,7 @@ $text-14-font: (
 
 $text-18-font: (
   "font-family": (
-    "Montserrat",
+    "Gibson",
     sans-serif,
   ),
   "font-weight": 400,
@@ -211,4 +211,3 @@ $breakpoints: (
 //===Other=====================================================================================================================================================
 $transition-duration-base: 0.3s;
 $transition-timing-base: ease;
-$border: 1px solid #ff62ce;
