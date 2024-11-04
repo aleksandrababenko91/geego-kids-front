@@ -2,6 +2,7 @@
 import { usePathname } from "/src/navigation";
 import Footer from "../shared/Footer/Footer";
 import Header from "../shared/Header/Header";
+import ModalDocumentPdf from '../modals/ModalDocumentPdf/ModalDocumentPdf';
 
 
 
@@ -18,6 +19,7 @@ export default function LayoutProvider({children}) {
           <Header />
           {children}
           <Footer />  
+          <ModalDocumentPdf />
         </>
       }
     </div>

@@ -5,6 +5,7 @@ import FooterLinks from "../FooterLinks/FooterLinks";
 import styles from "./Footer.module.scss";
 import Logo from './Logo/Logo';
 import HelpLinks from "../FooterLinks/HelpLinks";
+import { helpLinks } from "../FooterLinks/constants";
 
 
 
@@ -16,7 +17,7 @@ const Footer = () => {
           <div className={styles.footer}>
             <Logo className={styles.logo} />
             <FooterLinks />
-            <HelpLinks />
+            <HelpLinks helpLinks= {helpLinks} />
             <div className={styles.contacts}>
               <div className={styles.positionContacts}>
                 <ContactLinks />
@@ -28,7 +29,7 @@ const Footer = () => {
         <div className={styles.smallScreen}>
           <Logo className={styles.centerItem} />
           <FooterLinks />
-          <HelpLinks />
+          <HelpLinks helpLinks= {helpLinks} />
           <ContactLinks />
           <SocialIcons className={styles.centerItem} />
         </div>

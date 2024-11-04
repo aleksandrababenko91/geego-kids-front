@@ -9,9 +9,6 @@ import style from './LanguageBtn.module.scss';
 import clsx from "clsx";
 import arrow from '../../../../public/images/arrow.svg'
 
-
-
-
 export default function LanguageBtn() {
   const router = useRouter();
   const path = usePathname();

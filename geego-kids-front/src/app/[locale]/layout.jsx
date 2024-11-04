@@ -1,5 +1,4 @@
 import "@/styles/global.scss";
-
 import QueryProvider from "../../components/providers/queryProvider";
 import LayoutProvider from "../../components/providers/LayoutProvider";
 

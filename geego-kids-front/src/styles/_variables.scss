@@ -13,24 +13,27 @@ $primary-fon-card-3: rgb(107, 55, 124);
 $primary-fon-burger: #dac4a9;
 $primary-border: #958674;
 //====Gradient Button====================================================================================================================================================
-$button-hover-gradient1: #C5BABA;
-$button-hover-gradient2: #958674;
-$button-hover-gradient3: #000000;
-$button-hover-gradient4: #000000;
+$button-hover-gradient1: #CDE8E8;
+$button-hover-gradient2: #30B8B7;
+$button-hover-gradient3: #1A9E9D;
+$button-hover-gradient4: #176968;
+$button-hover-gradient5: #072C2C;
 
 
 $button-hover-gradient: linear-gradient(
   130deg,
-  $button-hover-gradient1 0%,
-  $button-hover-gradient2 37%,
-  $button-hover-gradient3 76%,
-  $button-hover-gradient4 100%,
+  $button-hover-gradient1 5%,
+  $button-hover-gradient2 17%,
+  $button-hover-gradient3 40%,
+  $button-hover-gradient4 79%,
+  $button-hover-gradient5 100%,
 );
 
-$button-gradient1: #1B293A;
-$button-gradient2: #958674;
-$button-gradient3: #1B293A;
-$button-gradient4: #1B293A;
+$button-gradient1: #CDE8E8;
+$button-gradient2: #30B8B7;
+$button-gradient3: #1A9E9D;
+$button-gradient4: #176968;
+$button-gradient5: #072C2C;
 
 $button-gradient: linear-gradient(
   135deg,

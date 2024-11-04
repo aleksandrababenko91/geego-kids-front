@@ -8,6 +8,6 @@ export const navigationLinks = [
 ];
 
 export const helpLinks = [
-  { name: "Palaute", url: "/palaute", type: linkTypes.DEFAULT },
-	{ name: "Ladata tiedosta", url: "/tiedosta", type: linkTypes.DEFAULT },
+  { name: "palaute", url: "palaute", type: linkTypes.HELP },
+	{ name: "ladata_tiedosta", url: "ladataTiedosta", type: linkTypes.HELP },
 ];
