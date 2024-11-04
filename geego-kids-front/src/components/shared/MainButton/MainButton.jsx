@@ -1,4 +1,4 @@
-import styles from "./mainbutton.module.scss";
+import styles from "./MainButton.module.scss";
 import clsx from "clsx";
 
 const buttonConfig = {

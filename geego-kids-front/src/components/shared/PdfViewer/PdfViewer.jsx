@@ -1,6 +1,6 @@
 "use client";
 import { useEffect, useState } from "react";
-import styles from './PDFViewer.module.scss';
+import styles from './PdfViewer.module.scss';
 import { Document, Page, pdfjs } from "react-pdf";
 import Loader from '@/components/shared/Loader/Loader';
 import { createKey } from '@/lib/createKey';
