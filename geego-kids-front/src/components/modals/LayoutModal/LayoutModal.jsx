@@ -26,7 +26,7 @@ const LayoutModal = ({ children, isOpen, handleClose }) => {
   if (!isOpen) return null;
 
   return createPortal(
-    <div data-lenis-prevent className={styles.modalOverlay}>
+    <div className={styles.modalOverlay}>
       <div className={styles.modaScroll}>
         {children}
       </div>
