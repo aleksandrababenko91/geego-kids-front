@@ -1,4 +1,4 @@
-@use '../../../styles/mixins' as mixin;
+@use "../../../styles/mixins" as mixin;
 @use "../../../styles/variables" as var;
 
 .article {
@@ -36,4 +36,93 @@
   text-overflow: ellipsis;
   margin-bottom: 24px;
 }
+.readMore {
+  font-size: 16px;
+  align-self: flex-end;
+  font-weight: 400;
+  position: relative;
+  padding: 10px 4px;
+  &::before {
+    content: "";
+    width: 0;
+    height: 1px;
+    background-color: var.$primary-border;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: width var.$transition-duration-base var.$transition-timing-base
+      0s;
+  }
+  @media (any-hover: hover) {
+    &:hover {
+      color: var.$secondary-white;
+      &::before {
+        width: 100%;
+      }
+    }
+  }
+}
+.fullDescWrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 8;
+  opacity: 0;
+  visibility: hidden;
+  transition: all var.$transition-duration-base var.$transition-timing-base 0s;
+  padding: 24px 10px 16px 10px;
+  border-radius: 8px;
+  border: 1px solid var.$primary-border;
+  background: var.$primary-fon-card-1;
+  &.showFullDesc {
+    opacity: 1;
+    visibility: visible;
+  }
+}
 
+.fullDesc {
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  &::-webkit-scrollbar {
+    width: 10px;
+  }
+  &::-webkit-scrollbar-track {
+    background: #180530;
+    box-shadow:
+      inset -1px 0 0 0 #f0f0f0,
+      inset 1px 0 0 0 #e8e8e8;
+    border-radius: 2px;
+  }
+  &::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    width: 8px;
+    background-color: var.$secondary-white;
+  }
+  & > p {
+    @include mixin.apply-font-styles(var.$text-20-font);
+    &:not(:last-child) {
+      margin-bottom: 15px;
+    }
+  }
+}
+
+.fullDescClose {
+  width: 24px;
+  height: 24px;
+  margin-bottom: 16px;
+  & > svg {
+    width: 100%;
+    height: 100%;
+    transition: all var.$transition-duration-base var.$transition-timing-base 0s;
+  }
+  @media (any-hover: hover) {
+    &:hover {
+      & > svg {
+        stroke: var.$primary-hover;
+      }
+    }
+  }
+}
