@@ -1,0 +1,39 @@
+@use '../../../styles/mixins' as mixin;
+@use "../../../styles/variables" as var;
+
+.article {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  background: var.$primary-fon-card-1;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid var.$primary-border;
+}
+.imageContainer {
+  position: relative;
+  padding-bottom: 46%;
+  & > img {
+    object-fit: cover;
+  }
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+}
+.title {
+  @include mixin.apply-font-styles(var.$h2-font);
+  margin-bottom: 16px;
+  white-space: nowrap;
+}
+.shortDesc {
+  @include mixin.apply-font-styles(var.$text-16-font);
+  display: -webkit-box;
+  -webkit-line-clamp: 4; /* Количество строк */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: 24px;
+}
+
