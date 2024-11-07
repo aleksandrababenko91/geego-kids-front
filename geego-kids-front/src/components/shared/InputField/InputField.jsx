@@ -12,7 +12,7 @@ export default function InputField({
   label = null,
   className,
   required=true,
-  options = {},
+
   ...props
 }) {
 
