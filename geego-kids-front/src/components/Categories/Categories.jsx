@@ -1,9 +1,9 @@
-import styles from './Challenges.module.scss';
-import ChallengesCard from './ChallengesCard/ChallengesCard';
+import styles from './Categories.module.scss';
+import CategoriesCard from './CategoriesCard/CategoriesCard';
 import { items} from './items';
 import { createKey } from '@/lib/createKey';
 
-const Challenges = () => {
+const Categories = () => {
   return (
     <section className={styles.roleSection}>
       <div className={styles.container}>
@@ -11,15 +11,18 @@ const Challenges = () => {
         {items.map((item) => {
           const cardKey = createKey();
           return (
-            <ChallengesCard 
+            <CategoriesCard 
               key={cardKey}
               image={item.image}
               title={item.title}
               description={item.description}
               cardBackground={item.cardBackground}
+              url={item.url}
             />
+            
           );
         })}
+        {}
         </div>
       </div>
     </section>
@@ -27,4 +30,4 @@ const Challenges = () => {
 }
 
 
-export default Challenges;
+export default Categories;

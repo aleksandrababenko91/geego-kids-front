@@ -1,13 +1,12 @@
 import HeroSection from '@/components/HeroSection/HeroSection';
-import Challenges from '@/components/Challenges/Challenges';
+import Categories from '@/components/Categories/Categories';
 import '../../styles/global.scss';
-
 
 export default function Home() {
   return (
     <main className='wrapper'>
         <HeroSection />
-        <Challenges />
+        <Categories />
     </main>
   );
 }
