@@ -6,7 +6,7 @@ import Image from "next/image";
 
 
 const ProjectCard = ({ data }) => {
-  const { imageUrl} = data;
+  const { imageUrl, name} = data;
 
 
   const handleClose = useCallback(() => {
@@ -19,9 +19,8 @@ const ProjectCard = ({ data }) => {
         <Image src={imageUrl} fill sizes="100%" alt="icon koulu" />
       </div>
       <div className={styles.content}>
-        <h3 className={styles.title}>GeegoCityCategory Name</h3>
-        <button onClick={handleClose} type="button" className={styles.button}>
-          <span>Click To Open</span>
+        <button onClick={handleClose} type="button" className={styles.title}>
+          <span>{name}</span>
         </button>
       </div>
     </article>
