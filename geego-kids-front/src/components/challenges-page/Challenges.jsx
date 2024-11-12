@@ -13,6 +13,7 @@ const Challenges = () => {
   const [searchQuery, setSearchQuery] = useState("");
   const [visibleCount, setVisibleCount] = useState(6); // initial visible count
 
+
   // Filter categories based on search query
   const filteredCategories = searchQuery
     ? categories.filter((category) =>
@@ -23,6 +24,7 @@ const Challenges = () => {
   const handleLoadMore = () => {
     setVisibleCount((prevCount) => prevCount + 3);
   };
+
 
   return (
     <section className={styles.section}>
@@ -44,7 +46,7 @@ const Challenges = () => {
           )}
         </div>
         <LoadMore onClick={handleLoadMore} />
-        <ModalTaskGroup /> {/* Include ModalTaskGroup component */}
+        <ModalTaskGroup /> 
       </div>
     </section>
   );
