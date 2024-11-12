@@ -5,8 +5,8 @@ import styles from "./SkillCard.module.scss";
 import Image from "next/image";
 
 
-const SkillCard = ({ data }) => {
-  const { imageUrl, name} = data;
+const SkillCard = () => {
+  // const { imageUrl, name} = data;
 
 
   // const handleClose = useCallback(() => {
