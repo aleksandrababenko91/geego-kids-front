@@ -4,7 +4,7 @@ import clsx from "clsx";
 import { useRef} from "react";
 import styles from "./InputSearch.module.scss";
 import Image from "next/image";
-import search from '../../../../public/images/Search.svg';
+import search from '../../../../public/images/search.svg';
 import close_black from '../../../../public/images/close_black.svg';
 
 const InputSearch = ({ onChange, className, placeholder = "Haku sana", value }) => {

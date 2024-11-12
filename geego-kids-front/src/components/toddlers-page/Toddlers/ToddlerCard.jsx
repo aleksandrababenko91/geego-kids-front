@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useCallback } from "react";
-import styles from "./toddlerCard.module.scss";
+import styles from './ToddlerCard.module.scss';
 import Image from "next/image";
 
 
