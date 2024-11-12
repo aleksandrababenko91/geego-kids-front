@@ -1,17 +1,12 @@
 "use client";
 
-import React, { useCallback } from "react";
 import styles from "./ChallengesCard.module.scss";
+import useStateModal from '@/state/stateModalTaskGroups';
 import Image from "next/image";
 
-
-const ProjectCard = ({ data }) => {
-  const { imageUrl, name} = data;
-
-
-  const handleClose = useCallback(() => {
-    setIsTeamShowed((state) => !state);
-  }, []);
+const ChallengesCard = ({ data }) => {
+  const { imageUrl, name, subCategory } = data;
+  const open = useStateModal((state) => state.open);
 
   return (
     <article className={styles.article}>
@@ -19,7 +14,11 @@ const ProjectCard = ({ data }) => {
         <Image src={imageUrl} fill sizes="100%" alt="icon koulu" />
       </div>
       <div className={styles.content}>
-        <button onClick={handleClose} type="button" className={styles.title}>
+        <button
+          type="button"
+          className={styles.title}
+          onClick={() => open(subCategory)} // Pass subCategory data to modal state
+        >
           <span>{name}</span>
         </button>
       </div>
@@ -27,4 +26,4 @@ const ProjectCard = ({ data }) => {
   );
 };
 
-export default ProjectCard;
+export default ChallengesCard;
