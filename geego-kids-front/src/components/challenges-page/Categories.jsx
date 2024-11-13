@@ -1,15 +1,15 @@
 "use client";
 
 import { useState } from "react";
-import ChallengesCard from './ChallengesCard';
+import CategoriesCard from './CategoriesCard';
 import { categories } from "./items";
 import { createKey } from '@/lib/createKey';
-import styles from "./Challenges.module.scss";
+import styles from "./Categories.module.scss";
 import InputSearch from '@/components/shared/InputField/InputSearch';
 import LoadMore from '@/components/shared/LoadMore/LoadMore';
-import ModalTaskGroup from '@/components/modals/ModalTaskGroups/ModalTaskGroup';
+import ModalSubCategoryGroup from '../modals/ModalSubCategoryGroup/ModalSubCategoryGroup';
 
-const Challenges = () => {
+const Categories = () => {
   const [searchQuery, setSearchQuery] = useState("");
   const [visibleCount, setVisibleCount] = useState(6); // initial visible count
 
@@ -39,17 +39,17 @@ const Challenges = () => {
         <div className={styles.content}>
           {filteredCategories.length > 0 ? (
             filteredCategories.slice(0, visibleCount).map((data) => (
-              <ChallengesCard key={createKey()} data={data} />
+              <CategoriesCard key={createKey()} data={data} />
             ))
           ) : (
-            <p>No challenges found.</p>
+            <p>No Categories found.</p>
           )}
         </div>
         <LoadMore onClick={handleLoadMore} />
-        <ModalTaskGroup /> 
+        <ModalSubCategoryGroup/>
       </div>
     </section>
   );
 };
 
-export default Challenges;
+export default Categories;

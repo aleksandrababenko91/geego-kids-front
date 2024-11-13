@@ -1,6 +1,6 @@
 import { create } from 'zustand';
 
-const stateModalTaskGroups = create((set) => ({
+const stateModalSubCategoryGroup = create((set) => ({
   isOpen: false,
   selectedData: null, 
   open: () => set({ isOpen: true }),
@@ -8,4 +8,4 @@ const stateModalTaskGroups = create((set) => ({
   setSelectedData: (data) => set({ selectedData: data }), 
 }));
 
-export default stateModalTaskGroups;
+export default stateModalSubCategoryGroup;

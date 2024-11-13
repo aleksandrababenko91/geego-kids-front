@@ -1,10 +1,10 @@
 @use "../../../styles/mixins" as mix;
 @use "../../../styles/variables" as var;
 
-.wrapper{
+.container{
   padding: 16px 10px 80px 10px;
   margin: auto;
- 
+  
   @include mix.media-q("md") {
     padding: 40px 16px 80px 16px;
   }
@@ -12,8 +12,9 @@
   @include mix.media-q("xl") {
     padding: 10vh 16px;
   }
-
+  
   .modal {
+    border: 2px solid var.$button-hover-gradient2;
     min-width: 270px;
     min-height: 90vh;
     background: var.$primary-primary;
@@ -22,15 +23,16 @@
     position: relative;
     display: flex;
     align-items: center;
+    flex-direction: column;
     margin: auto;
-
+    
     @include mix.media-q("md") {
-      min-width: 750px;
-      padding: 92px 16px 32px 16px;
+      padding: 10%;
+      min-width: 500px;
     }
 
     @include mix.media-q("xl") {
-      min-width: 1000px;
+      min-width: 700px;
     }
 
     .closeButton {
@@ -43,5 +45,18 @@
         right: 18px;
       }
     }
+  }
+}
+
+.title {
+  text-align: center;
+  width: 100%;
+  @include mix.apply-font-styles(var.$h6-font);
+  color: var.$secondary-white;
+  @include mix.media-q("md") { 
+    font-size: 32px;
+  }
+  @include mix.media-q("xl") { 
+    font-size: 40px;
   }
 }

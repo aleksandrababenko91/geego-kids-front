@@ -5,19 +5,19 @@ $fontFamily: ("Gibson", sans-serif);
 //=Primary colors=======================================================================================================================================================
 $primary-footer: #032741;
 $primary-primary: #032741;
-$primary-hover: #a9d8da;
-$primary-fon: #DFEAEF;
+$primary-hover: #D1D6DA;
+$primary-fon: #F2F3F4;
 $primary-fon-card-1: rgb(0, 116, 172);
 $primary-fon-card-2: rgb(235, 106, 57);
 $primary-fon-card-3: rgb(107, 55, 124);
-$primary-fon-burger: #dac4a9;
-$primary-border: #958674;
+$primary-fon-burger: #D1D6DA;
+$primary-border: #F2F3F4;
 //====Gradient Button====================================================================================================================================================
-$button-hover-gradient1: #CDE8E8;
-$button-hover-gradient2: #30B8B7;
-$button-hover-gradient3: #1A9E9D;
+$button-hover-gradient1: #F2F3F4;
+$button-hover-gradient2: #0EB1AF;
+$button-hover-gradient3: #0EB1AF;
 $button-hover-gradient4: #176968;
-$button-hover-gradient5: #072C2C;
+$button-hover-gradient5: #032741;
 
 
 $button-hover-gradient: linear-gradient(
@@ -43,10 +43,11 @@ $button-gradient: linear-gradient(
   $button-gradient4 100%,
 );
 // //=Gradient Icons=======================================================================================================================================================
-$icon-gradient1: #e37cc1;
-$icon-gradient2: #e231a8;
-$icon-gradient3: #9d2f79;
-$icon-gradient4: #851a62;
+$icon-gradient1: #CDE8E8;
+$icon-gradient2: #30B8B7;
+$icon-gradient3: #1A9E9D;
+$icon-gradient4: #176968;
+$icon-gradient5: #072C2C;
 
 $icons-gradient: linear-gradient(
   135deg,
@@ -72,9 +73,9 @@ $primary-gradient: linear-gradient(
 );
 //=Secondary colors=======================================================================================================================================================
 $secondary-black: #030110;
-$secondary-white: #fcfcfc;
+$secondary-white: #F2F3F4;
 $secondary-text: #363636;
-$secondary-gray: #9a9a9a;
+$secondary-gray: #D1D6DA;
 $secondary-hover: #ededed;
 $secondary-error: #f94949;
 $secondary-positive: #1ba161;
@@ -98,7 +99,7 @@ $h2-font: (
   ),
   "font-size": 24px,
   "letter-spacing": 0.01em,
-  "font-weight": 500,
+  "font-weight": 700,
   "line-height": 150%,
 );
 
@@ -148,16 +149,7 @@ $h6-font: (
     "letter-spacing": 0.01em,
     );
     
-$h7-font: (
-  "font-family": (
-    "Open Sans",
-    sans-serif,
-  ),
-  "font-size": 26px,
-  "letter-spacing": 0.01em,
-  "font-weight": 700,
-  "line-height": 150%,
-);
+
     $button: $h3-font;
     $menu: $h3-font;
 

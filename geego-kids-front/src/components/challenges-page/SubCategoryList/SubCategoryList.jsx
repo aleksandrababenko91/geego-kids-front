@@ -1,21 +1,31 @@
-import { useTranslations } from "next-intl";
-import StructureCard from "./StructureCard/StructureCard";
-import styles from "./StructureSection.module.scss";
-import { items } from "./items";
-import { createKey } from "../../../lib/utils/createKey";
+"use client";
 
-export default function StructureSection() {
-  const t = useTranslations("Main.our_structure_section");
+import styles from './SubCategoryList.module.scss';
+import Image from 'next/image';
+import { createKey } from '../../../lib/createKey';
 
+const SubCategoryList = ({ subCategory }) => {
   return (
-    <section className={styles.mainContainer}>
-      <h2 className={styles.title} >{t("title")}</h2>
-      <div className={styles.cardContainer}>
-        {items.map((item) => {
-          const cardKey = createKey();
-          return <StructureCard key={cardKey} item={item} />;
-        })}
-      </div>
-    </section>
+    <div className={styles.card}>
+        {subCategory && subCategory.length > 0 && 
+          subCategory.map((sub) => (
+            <div className={styles.cardContainer} 
+              key={createKey()}>
+              <Image
+                src={sub.imageDesc}
+                width={sub.width}
+                height={sub.height}
+                alt={sub.subName}
+                className={styles.iconWrapper}
+              />
+              <div >
+                <h2 className={styles.header}>{sub.subName}</h2>
+              </div>
+            </div>
+          ))
+        }
+    </div>
   );
-}
+};
+
+export default SubCategoryList;
