@@ -7,7 +7,7 @@ import Link from 'next/link';
 
 const SubCategoryList = ({ name, subCategory }) => {
   return (
-    <div>
+    <div className={styles.card}>
       {subCategory && subCategory.length > 0 &&
         subCategory.map((sub) => (
           <div className={styles.cardContainer} key={createKey()}>

@@ -18,7 +18,7 @@ const ModalSubCategoryGroup = () => {
 
   return (
     <LayoutModal isOpen={isOpen} handleClose={onClose}>
-      <div className={styles.container}>
+      <div className={styles.wrapper}>
         <div className={styles.modal}>
           <CloseBtn className={styles.closeButton} onClick={onClose} />
           <h1 className={styles.title}>{selectedData.name}</h1>
