@@ -22,10 +22,10 @@ const ModalSubCategoryGroup = () => {
         <div className={styles.modal}>
           <CloseBtn className={styles.closeButton} onClick={onClose} />
           <h1 className={styles.title}>{selectedData.name}</h1>
-            <SubCategoryList
-              name={selectedData.name}
-              subCategory={selectedData.subCategory}
-            />
+          <SubCategoryList
+            name={selectedData.name}
+            subCategory={selectedData.subCategory}
+          />
         </div>
       </div>
     </LayoutModal>

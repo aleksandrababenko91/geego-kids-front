@@ -8,7 +8,6 @@ import HelpLinks from "../FooterLinks/HelpLinks";
 import { helpLinks } from "../FooterLinks/constants";
 
 
-
 const Footer = () => {
   return (
     <>

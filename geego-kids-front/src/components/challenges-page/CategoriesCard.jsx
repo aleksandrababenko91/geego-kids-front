@@ -1,5 +1,3 @@
-// ChallengesCard.js
-
 "use client";
 
 import styles from "./CategoriesCard.module.scss";

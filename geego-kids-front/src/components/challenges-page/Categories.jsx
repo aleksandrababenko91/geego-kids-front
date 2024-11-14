@@ -13,7 +13,6 @@ const Categories = () => {
   const [searchQuery, setSearchQuery] = useState("");
   const [visibleCount, setVisibleCount] = useState(6); // initial visible count
 
-
   // Filter categories based on search query
   const filteredCategories = searchQuery
     ? categories.filter((category) =>
@@ -24,7 +23,6 @@ const Categories = () => {
   const handleLoadMore = () => {
     setVisibleCount((prevCount) => prevCount + 3);
   };
-
 
   return (
     <section className={styles.section}>
