@@ -39,9 +39,7 @@
 }
 
 
-.card {
-margin-top: 8%;
-}
+
 
 .header {
   @include mixins.apply-font-styles(var.$h6-font);
