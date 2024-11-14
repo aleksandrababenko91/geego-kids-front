@@ -4,7 +4,7 @@ import styles from "./CategoriesCard.module.scss";
 import useStateModal from '@/state/stateModalSubCategoryGroup';
 import Image from "next/image";
 
-const ChallengesCard = ({ data }) => {
+const CategoriesCard = ({ data }) => {
   const { imageUrl, name } = data;
   const open = useStateModal((state) => state.open);
   const setSelectedData = useStateModal((state) => state.setSelectedData);
@@ -28,4 +28,4 @@ const ChallengesCard = ({ data }) => {
   );
 };
 
-export default ChallengesCard;
+export default CategoriesCard;

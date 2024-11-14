@@ -10,10 +10,10 @@ import LoadMore from '@/components/shared/LoadMore/LoadMore';
 import ModalSubCategoryGroup from '../modals/ModalSubCategoryGroup/ModalSubCategoryGroup';
 
 const Categories = () => {
-  const [searchQuery, setSearchQuery] = useState("");
+   const [searchQuery, setSearchQuery] = useState("");
   const [visibleCount, setVisibleCount] = useState(6); // initial visible count
 
-  // Filter categories based on search query
+  //Filter categories based on search query
   const filteredCategories = searchQuery
     ? categories.filter((category) =>
         category.name.toLowerCase().includes(searchQuery.toLowerCase())
@@ -46,6 +46,7 @@ const Categories = () => {
         <LoadMore onClick={handleLoadMore} />
         <ModalSubCategoryGroup/>
       </div>
+      
     </section>
   );
 };
