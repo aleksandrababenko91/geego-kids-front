@@ -1,9 +1,6 @@
-import TaskList from '@/components/challenges-page/TaskList';
-import '@/styles/global.scss';
+import TaskList from '@/components/challenges-page//Tasks/TaskList';
 
 export default function Task({params} ) {
-
-
   return (
     <main>
         <TaskList params={params}/>

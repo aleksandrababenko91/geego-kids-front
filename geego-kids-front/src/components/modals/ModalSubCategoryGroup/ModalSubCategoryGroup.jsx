@@ -3,14 +3,14 @@
 import stateModalSubCategoryGroup from "../../../state/stateModalSubCategoryGroup";
 import { useBodyLock } from '@/lib/hooks/useBodyLock';
 import CloseBtn from '@/components/shared/CloseButton/CloseButton';
-import LayoutModal from "../LayoutModal/LayoutModal";
+import LayoutModal from "../../modals/LayoutModal/LayoutModal";
 import styles from './ModalSubCategoryGroup.module.scss';
 import SubCategoryList from '@/components/challenges-page/SubCategoryList/SubCategoryList';
 
 const ModalSubCategoryGroup = () => {
   const isOpen = stateModalSubCategoryGroup((state) => state.isOpen);
   const onClose = stateModalSubCategoryGroup((state) => state.close);
-  const selectedData = stateModalSubCategoryGroup((state) => state.selectedData); // получаем выбранные данные
+  const selectedData = stateModalSubCategoryGroup((state) => state.selectedData); //  recieved choosen data
 
   useBodyLock(isOpen);
 

@@ -48,11 +48,6 @@ export const categories = [
 						width: 120,
     				height: 120,
 					},
-					{ taskName: "Tikkunosto",
-						imagetask: "/images/ikoni_koulu.svg",
-						width: 120,
-    				height: 120,
-					},
 				]
 			},
 			{ subName: "Pariakrobatia Easy",

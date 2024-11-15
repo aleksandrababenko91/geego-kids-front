@@ -1,4 +1,4 @@
-import Categories from '@/components/challenges-page/Categories';
+import Categories from '@/components/challenges-page/Categories/Categories';
 
 export default function Geegocity() {
   return (

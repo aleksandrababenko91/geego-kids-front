@@ -10,7 +10,7 @@ const CategoriesCard = ({ data }) => {
   const setSelectedData = useStateModal((state) => state.setSelectedData);
 
   const handleClick = () => {
-    setSelectedData(data); // asenta chosen Data
+    setSelectedData(data); // load chosen Data
     open(); // open Modalka
   };
 

@@ -2,17 +2,16 @@
 
 import { useState } from "react";
 import CategoriesCard from './CategoriesCard';
-import { categories } from "./items";
+import { categories } from '../items';
 import { createKey } from '@/lib/createKey';
 import styles from "./Categories.module.scss";
 import InputSearch from '@/components/shared/InputField/InputSearch';
 import LoadMore from '@/components/shared/LoadMore/LoadMore';
-import ModalSubCategoryGroup from '../modals/ModalSubCategoryGroup/ModalSubCategoryGroup';
+import ModalSubCategoryGroup from '../../modals/ModalSubCategoryGroup/ModalSubCategoryGroup';
 
 const Categories = () => {
-   const [searchQuery, setSearchQuery] = useState("");
+  const [searchQuery, setSearchQuery] = useState("");
   const [visibleCount, setVisibleCount] = useState(6); // initial visible count
-
   //Filter categories based on search query
   const filteredCategories = searchQuery
     ? categories.filter((category) =>
