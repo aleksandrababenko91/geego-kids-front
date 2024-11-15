@@ -37,10 +37,7 @@
       min-width: 700px;
     }
 
-
     .modal {
-    
-
     @include mix.media-q("md") {
       padding: 48px 32px 32px 32px;
     }

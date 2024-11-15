@@ -12,9 +12,14 @@ export default function TaskList() {
 
   return (
     <div className={styles.section}>
-      {tasks.map((task) => (
-        <TaskCard key={createKey()} task={task} />
-      ))}
+      <h1 className={styles.title}>SubCategoryName</h1>
+      <ul className={styles.list}>
+        {tasks.map((task) => (
+          <li key={createKey()}>
+            <TaskCard key={createKey()} task={task} />
+          </li>
+        ))}
+        </ul>
     </div>
   );
 }

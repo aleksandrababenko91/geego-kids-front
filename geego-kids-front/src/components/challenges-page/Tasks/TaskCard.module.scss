@@ -1,30 +1,40 @@
 @use "../../../styles/variables" as var;
 @use "../../../styles/mixins" as mx;
 
+
 .card {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 10px;
-  padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  background-color: #fff;
-  text-align: center;
+  gap: 16px;
 }
-
 .image {
-  border-radius: 8px;
-  max-width: 100%;
-  height: auto;
+  border: 20px solid var.$button-hover-gradient2;
+  border-radius: 100%;
+  position: relative;
+  width: 120px;
+  height: 120px;
+  @media (min-width: 696px) {
+    width: 180px;
+    height: 180px;
+  }
+  @include mx.media-q("xl") {
+    width: 180px;
+    height: 180px;
+  }
 }
 
 .name {
-  margin-top: 10px;
-  font-size: 16px;
-  color: #333;
+  @include mx.apply-font-styles(var.$text-16-font);
+
+  width: 260px;
+  @media (min-width: 696px) {
+    @include mx.apply-font-styles(var.$h6-font);
+    width: 334px;
+  }
+  @include mx.media-q("xl") {
+    @include mx.apply-font-styles(var.$h2-font);
+    width: 397px;
+  }
 }
-
-
-
