@@ -1,22 +1,30 @@
 "use client";
 
-import Image from 'next/image';
-import Link from 'next/link';
-import styles from './TaskCard.module.scss';
+import Image from "next/image";
+import styles from "./TaskCard.module.scss";
+import stateModalSubCategoryGroup from "../../../state/stateModalSubCategoryGroup";
 
 const TaskCard = ({ task }) => {
+  const openModal = stateModalSubCategoryGroup((state) => state.open);
+  const setSelectedData = stateModalSubCategoryGroup((state) => state.setSelectedData);
+
+  const handleCardClick = () => {
+    if (task.taskVideo) {
+      setSelectedData(task); // Устанавливаем данные текущего задания
+      openModal(); // Открываем модалку
+    }
+  };
+
   return (
-    <div className={styles.card}>
-      <Link href={`/task/${task.taskName}`}>
-        <Image
-          src={task.imageTask}
-          width={task.width}
-          height={task.height}
-          alt={task.taskName}
-          className={styles.image}
-        />
-        <p className={styles.name}>{task.taskName}</p>
-      </Link>
+    <div className={styles.card} onClick={handleCardClick}>
+      <Image
+        src={task.imageTask}
+        width={task.width}
+        height={task.height}
+        alt={task.taskName}
+        className={styles.image}
+      />
+      <p className={styles.name}>{task.taskName}</p>
     </div>
   );
 };
