@@ -11,12 +11,12 @@ const MainLink = ({
   children,
   type = linkTypes.DEFAULT,
   className,
-  handleClose,
   openInNewTab,
   ...rest
 }) => {
   const pathname = usePathname();
 
+  // Проверка активного состояния
   const isActive = (name) => {
     if (pathname === "/" && name === "main") {
       return true;
@@ -24,9 +24,9 @@ const MainLink = ({
     return pathname.split("/").includes(name);
   };
 
+  // Обработчик клика
   const handleClick = (event) => {
-    if (type === linkTypes.BURGER) handleClose();
-    if (type === linkTypes.HELP || type === linkTypes.DOCS) {
+    if (type === linkTypes.HELP || type === linkTypes.DOCS || type === linkTypes.MODAL) {
       event.preventDefault();
       return;
     }
@@ -44,6 +44,7 @@ const MainLink = ({
       styles.link,
       styles[`link--${type}`],
       isActive(name) && styles.active,
+      type === linkTypes.MODAL && styles.underline, // Подчеркивание для MODAL
       className
     ),
     onClick: handleClick,
@@ -55,11 +56,7 @@ const MainLink = ({
     linkProps.rel = "noopener noreferrer";
   }
 
-  if (
-    type === linkTypes.HELP ||
-    url === "/contacts" ||
-    type === linkTypes.DOCS
-  ) {
+  if (type === linkTypes.HELP || type === linkTypes.DOCS || type === linkTypes.MODAL) {
     return <button {...linkProps}>{children}</button>;
   }
 

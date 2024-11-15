@@ -10,8 +10,8 @@ const TaskCard = ({ task }) => {
 
   const handleCardClick = () => {
     if (task.taskVideo) {
-      setSelectedData(task); // Устанавливаем данные текущего задания
-      openModal(); // Открываем модалку
+      setSelectedData(task); 
+      openModal(); 
     }
   };
 

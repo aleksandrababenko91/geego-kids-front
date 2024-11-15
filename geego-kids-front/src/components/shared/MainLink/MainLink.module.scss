@@ -12,7 +12,9 @@
       color: var.$primary-hover;
     }
   }
-
+  .link--modal {
+    text-decoration: underline; 
+  }
   &--default {
     &::before {
       content: "";
