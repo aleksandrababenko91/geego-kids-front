@@ -12,6 +12,8 @@ const CategoriesCard = ({ data }) => {
   const handleClick = () => {
     setSelectedData(data); // load chosen Data
     open(); // open Modalka
+    console.log("open Modalka");
+    
   };
 
   return (

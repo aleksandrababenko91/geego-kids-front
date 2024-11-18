@@ -20,8 +20,8 @@ export default function TaskList() {
             <TaskCard key={createKey()} task={task} />
           </li>
         ))}
-        </ul>
         <ModalVideo />
+        </ul>
     </div>
   );
 }

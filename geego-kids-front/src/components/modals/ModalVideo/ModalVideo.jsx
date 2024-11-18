@@ -12,10 +12,7 @@ const ModalVideo = () => {
   const selectedData = stateModalSubCategoryGroup((state) => state.selectedData); //  recieved choosen data
 
   useBodyLock(isOpen);
-
-  if (!selectedData) return null;   
-  // if (!selectedData || !selectedData.taskVideo) return null; // Отображаем модалку только с видео
-
+  if (!selectedData || !selectedData.taskVideo) return null; // Отображаем модалку только с видео
 
   return (
     <LayoutModal isOpen={isOpen} handleClose={onClose}>
