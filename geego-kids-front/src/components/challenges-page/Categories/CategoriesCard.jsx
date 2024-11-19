@@ -10,11 +10,11 @@ const CategoriesCard = ({ data }) => {
   const setSelectedData = useStateModal((state) => state.setSelectedData);
 
   const handleClick = () => {
-    setSelectedData(data); // load chosen Data
-    open(); // open Modalka
-    console.log("open Modalka");
-    
+    setSelectedData(data);
+    open();
+    console.log("Selected category data:", data);
   };
+  
 
   return (
     <article className={styles.article}>

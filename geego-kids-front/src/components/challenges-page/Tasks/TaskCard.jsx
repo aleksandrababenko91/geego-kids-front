@@ -2,24 +2,21 @@
 
 import Image from "next/image";
 import styles from "./TaskCard.module.scss";
-import useStateModal from '@/state/stateModalSubCategoryGroup';
-
+import stateVideoModal from '@/state/stateVideoModal'; // Импортируем состояние модалки
 
 const TaskCard = ({ task }) => {
-  const open = useStateModal((state) => state.open);
-  const setSelectedData = useStateModal((state) => state.setSelectedData);
+  const openModal = stateVideoModal((state) => state.open); // Получаем функцию для открытия модалки
+  const setSelectedTask = stateVideoModal((state) => state.setSelectedTask); // Получаем функцию для установки выбранной задачи
 
-  const handleClick = () => {
+  const handleCardClick = () => {
     if (task.taskVideo) {
-      setSelectedData(task); 
-      open(); 
-      console.log("open ModalkaVideo?");
-      
+      setSelectedTask(task); // Устанавливаем данные выбранной задачи
+      openModal(); // Открываем модалку
     }
   };
 
   return (
-    <div className={styles.card} onClick={handleClick}>
+    <div className={styles.card} onClick={handleCardClick}>
       <Image
         src={task.imageTask}
         width={task.width}

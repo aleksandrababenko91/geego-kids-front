@@ -27,7 +27,7 @@
 
 .name {
   @include mx.apply-font-styles(var.$text-16-font);
-
+  text-align: center;
   width: 260px;
   @media (min-width: 696px) {
     @include mx.apply-font-styles(var.$h6-font);
