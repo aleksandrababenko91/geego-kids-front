@@ -6,7 +6,7 @@ export const metadata = {
   title: "Geego Kids",
   description: "Geego Kids web sivu",
   icons: {
-    icon: ["/images/logo.png"],
+    icon: ["/images/logo.svg"],
   },
 };
 

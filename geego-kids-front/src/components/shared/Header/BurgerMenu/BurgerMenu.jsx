@@ -3,14 +3,11 @@
 import styles  from './BurgerMenu.module.scss'
 import { motion } from 'framer-motion';
 import { useState } from 'react';
-// import ReservationButton from '../../ReservationButton/ReservationButton';
-// import { useTranslations } from "next-intl";
 import ButtonUlos from '@/components/shared/ButtonUlos/ButtonUlos';
-import Menu from './Menu/Menu';
+
 
 
 export default function Header() {
-  // const t = useTranslations("Header");
   const [burgerMenuActive, setBurgerMenuActive] = useState(false);
 
   const toggleBurgerMenu = () => {
@@ -69,9 +66,24 @@ export default function Header() {
           animate={burgerMenuActive ? 'open' : 'closed'}
           variants={motionVariants}
         >
+           <motion.li variants={listItemVariants}>
+                <a href="/geegocity">Geegocity</a>
+              </motion.li>
+              <motion.li variants={listItemVariants}>
+                <a href="/sporttiparkkki">Sporttiparkki</a>
+              </motion.li>
+              <motion.li variants={listItemVariants}>
+                <a href="/">Koulu</a>
+              </motion.li>
+              <motion.li variants={listItemVariants}>
+                <a href="/">Tietosuoja</a>
+              </motion.li>
+              <motion.li variants={listItemVariants}>
+                <a href="/">Ladata tiedosta</a>
+              </motion.li>
           <motion.li variants={listItemVariants}>
-            <Menu />
-            <ButtonUlos />
+          <ButtonUlos className={styles.headerBtn}>Kirjaudu Ulos</ButtonUlos>
+
           </motion.li>
         </motion.ul>
       </div>

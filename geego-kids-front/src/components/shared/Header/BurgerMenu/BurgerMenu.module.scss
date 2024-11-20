@@ -9,7 +9,7 @@
   align-items: flex-start;
   justify-content: flex-start;
   height: fit-content;
-  background-color: var.$primary-primary;
+  background-color: var.$primary-fon-card-1;
   width: 100%;
   top: 0;
   padding: 0 10vw;
@@ -98,7 +98,7 @@
 
   .content {
     position: absolute;
-    top: 30vh;
+    top: 20vh;
     display: none;
 
     ul {
@@ -157,7 +157,8 @@
 
 
 .navbar.active {
-  background-color: var.$primary-fon-burger;
+  background-color: var.$primary-primary;
+
   transition: 0.75s height;
   height: 100vh;
 
