@@ -1,4 +1,3 @@
-// src/app/[locale]/geegocity/[category]/[subcategory]/page.jsx
 "use client";
 
 import TaskList from "@/components/challenges-page/Tasks/TaskList";
@@ -7,7 +6,7 @@ import { categories } from "@/components/challenges-page/items";
 export default function TaskPage({ params }) {
   const { category, subcategory } = params;
 
-  // Декодируем параметры из URL
+  // Decode params URL
   const decodedCategory = decodeURIComponent(category);
   const decodedSubcategory = decodeURIComponent(subcategory);
 
@@ -33,7 +32,7 @@ export default function TaskPage({ params }) {
 
   return (
     <main>
-      <TaskList tasks={subCategoryData.task} />
+      <TaskList tasks={subCategoryData.task} subName={subCategoryData.subName}/>
     </main>
   );
 }

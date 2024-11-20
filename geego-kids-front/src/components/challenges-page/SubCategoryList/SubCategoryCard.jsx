@@ -1,5 +1,4 @@
 "use client";
-// src/components/challenges-page/SubCategoryCard/SubCategoryCard.jsx
 
 import Link from 'next/link';
 import styles from './SubCategoryCard.module.scss';

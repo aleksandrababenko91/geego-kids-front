@@ -5,6 +5,7 @@ import { createKey } from '../../../lib/createKey';
 import SubCategoryCard from './SubCategoryCard';
 
 const SubCategoryList = ({ name, subCategory = [] }) => {
+
   return (
     <div className={styles.card}>
       {subCategory && subCategory.length > 0 &&

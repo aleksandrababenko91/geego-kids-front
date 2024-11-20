@@ -12,6 +12,7 @@ import ModalSubCategoryGroup from '../../modals/ModalSubCategoryGroup/ModalSubCa
 const Categories = () => {
   const [searchQuery, setSearchQuery] = useState("");
   const [visibleCount, setVisibleCount] = useState(6); // initial visible count
+  
   //Filter categories based on search query
   const filteredCategories = searchQuery
     ? categories.filter((category) =>
@@ -19,6 +20,7 @@ const Categories = () => {
       )
     : categories;
 
+    //LoadMOre Function
   const handleLoadMore = () => {
     setVisibleCount((prevCount) => prevCount + 3);
   };
@@ -39,7 +41,7 @@ const Categories = () => {
               <CategoriesCard key={createKey()} data={data} />
             ))
           ) : (
-            <p>No Categories found.</p>
+            <p>No Categories found.</p> // There will be modal window  "Page undeR DEVELOPMENT"
           )}
         </div>
         <LoadMore onClick={handleLoadMore} />

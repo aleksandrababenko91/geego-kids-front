@@ -12,7 +12,7 @@ const CategoriesCard = ({ data }) => {
   const handleClick = () => {
     setSelectedData(data);
     open();
-    console.log("Selected category data:", data);
+    // console.log("Selected category data:", data);
   };
   
 

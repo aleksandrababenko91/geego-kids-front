@@ -1,6 +1,5 @@
 "use client";
 
-
 import stateVideoModal from "../../../state/stateVideoModal";
 import { useBodyLock } from '@/lib/hooks/useBodyLock'; // Блокировка прокрутки
 import CloseBtn from '@/components/shared/CloseButton/CloseButton';
