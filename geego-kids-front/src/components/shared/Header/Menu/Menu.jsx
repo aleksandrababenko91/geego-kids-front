@@ -2,7 +2,6 @@ import MainLink from "../../MainLink/MainLink";
 import { navigationLinks } from "./constants";
 import styles from "./Menu.module.scss";
 import { createKey } from '../../../../lib/createKey';
-import clsx from 'clsx';
 
 const Menu = () => {
 
