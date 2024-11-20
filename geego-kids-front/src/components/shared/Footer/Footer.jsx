@@ -26,12 +26,13 @@ const Footer = () => {
           </div>
         </div>
         <div className={styles.smallScreen}>
-          <Logo className={styles.centerItem} />
+          <Logo  />
           <FooterLinks />
           <HelpLinks helpLinks= {helpLinks} />
           <ContactLinks />
-          <SocialIcons className={styles.centerItem} />
+          <SocialIcons  />
         </div>
+          <p className={styles.logoWrapper}>VARALA LOVE GEEGO</p>
       </footer>
     </>
   );

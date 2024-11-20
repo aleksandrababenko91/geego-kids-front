@@ -8,6 +8,6 @@ export const navigationLinks = [
 ];
 
 export const helpLinks = [
-  { name: "palaute", url: "palaute", type: linkTypes.HELP },
-	{ name: "ladata_tiedosta", url: "ladataTiedosta", type: linkTypes.HELP },
+  { name: "palaute", url: "https://www.geegokids.com/fi/palaute/", type: linkTypes.DEFAULT },
+	{ name: "ladata_tiedosta", url: "https://www.geegokids.com/fi/palaute/", type: linkTypes.DEFAULT },
 ];

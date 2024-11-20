@@ -5,7 +5,7 @@
   //Header fixed the height
   margin-top: 80px;
   position: relative;
-  background-color: black; 
+  background: var.$primary-fon;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -14,7 +14,7 @@
 }
 
 .videoContainer {
-  background-color: black; 
+  background: transparent;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -22,7 +22,8 @@
 }
 
 .textContainer{
-  background-color: black; 
+  color: var.$button-hover-gradient2;
+  @include mx.apply-font-styles(var.$h1-font);
   display: flex;
   justify-content: center;
   align-items: center;
