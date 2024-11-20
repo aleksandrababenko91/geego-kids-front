@@ -82,7 +82,7 @@ export default function Header() {
                 <a href="/">Ladata tiedosta</a>
               </motion.li>
           <motion.li variants={listItemVariants}>
-          <ButtonUlos className={styles.headerBtn}>Kirjaudu Ulos</ButtonUlos>
+          <ButtonUlos>Kirjaudu Ulos</ButtonUlos>
 
           </motion.li>
         </motion.ul>
