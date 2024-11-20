@@ -18,12 +18,12 @@
   .navigation {
     position: absolute;
     top: 0;
-    padding: 3rem 20px 0 0;
+    padding: 2rem 20px 0 0;
     width: calc(100% - 30vw);
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    @media (min-width: 993px) {
+    @media (min-width: 1025px) {
       display: none;
     }
 

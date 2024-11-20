@@ -5,6 +5,7 @@ import BurgerMenu from "./BurgerMenu/BurgerMenu";
 import Logo from '../Logo/Logo';
 import ButtonUlos from '../ButtonUlos/ButtonUlos';
 
+
 const Header = () => {
 
   return (
@@ -12,8 +13,8 @@ const Header = () => {
       <div className={styles.wrapper}>
         <Logo variant="header" className={styles.logo} />
         <Menu />
-        <ButtonUlos>Kirjaudu Ulos</ButtonUlos>
-        <LanguageBtn />
+        <ButtonUlos className={styles.headerBtn}>Kirjaudu Ulos</ButtonUlos>
+        <LanguageBtn  />
       </div>
       <BurgerMenu />
     </header>

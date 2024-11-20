@@ -5,7 +5,9 @@ import { motion } from 'framer-motion';
 import { useState } from 'react';
 // import ReservationButton from '../../ReservationButton/ReservationButton';
 // import { useTranslations } from "next-intl";
-import Menu from '../Menu/Menu';
+import ButtonUlos from '@/components/shared/ButtonUlos/ButtonUlos';
+import Menu from './Menu/Menu';
+
 
 export default function Header() {
   // const t = useTranslations("Header");
@@ -69,6 +71,7 @@ export default function Header() {
         >
           <motion.li variants={listItemVariants}>
             <Menu />
+            <ButtonUlos />
           </motion.li>
         </motion.ul>
       </div>
