@@ -9,7 +9,6 @@ const AnimatedVideo = () => {
         <source src="/videos/logo_white_fade.webm" type="video/webm" />
       </video> */}
       <Image  width="778" height="334" src={logo} alt="logopic"></Image>
-
     </div>
   );
 };

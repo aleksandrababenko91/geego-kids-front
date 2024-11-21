@@ -37,9 +37,27 @@
   background: rgba(192, 164, 183, 0.6);
   gap: 20px;
   @include mixin.apply-font-styles(var.$h4-font);
+  font-size: 20px;
+  
+  @media (min-width: 500px) {
+    @include mixin.apply-font-styles(var.$h4-font);
+    font-size: 26px;
+  }
+  @media (min-width: 768px) {
+    @include mixin.apply-font-styles(var.$h4-font);
+    font-size: 32px;
+  }
+  @media (min-width: 900px) {
+    @include mixin.apply-font-styles(var.$h4-font);
+    font-size: 30px;
+  }
+  
+  @media (min-width: 1366px) {
+    @include mixin.apply-font-styles(var.$h4-font);
+    font-size: 32px;
+  }
 
 }
-
 .shortDesc {
   @include mixin.apply-font-styles(var.$text-16-font);
   display: -webkit-box;
