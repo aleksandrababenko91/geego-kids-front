@@ -11,7 +11,6 @@ import ModalSubCategoryGroup from '../../modals/ModalSubCategoryGroup/ModalSubCa
 import Image from 'next/image';
 import Geego from "../../../../public/images/Geego.svg"
 
-
 const Categories = () => {
   const [searchQuery, setSearchQuery] = useState("");
   const [visibleCount, setVisibleCount] = useState(6); // initial visible count
@@ -30,6 +29,11 @@ const Categories = () => {
 
   return (
     <section className={styles.section}>
+      <div className={styles.wrapper}>
+      <div className={styles.headerContainer}>
+        <div >
+          <h1 className={styles.title} >GEEGOCITY</h1>
+        </div>
       <div className={styles.elips}>
         <Image
           className={styles.rotate}
@@ -37,14 +41,15 @@ const Categories = () => {
           alt="geego circle"
           width={100} 
           height={100} 
-        />
+          />
+      </div>
+      </div>
+      <p className={styles.text}>
+        Geegocityssä liikkumisen taidot vahvistuvat ja 
+          <br />lapsi oppii yhdistelemään niitä.
+      </p>
       </div>
       <div className={styles.challengesContainer}>
-        <h1 className={styles.title}>GEEGOCITY</h1>
-        <p className={styles.text}>
-          Geegocityssä liikkumisen taidot vahvistuvat ja 
-            <br />lapsi oppii yhdistelemään niitä.
-        </p>
         <InputSearch
           className={styles.search}
           onChange={(e) => setSearchQuery(e.target.value)}
