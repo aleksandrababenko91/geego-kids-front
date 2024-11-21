@@ -39,8 +39,7 @@ const Categories = () => {
           className={styles.rotate}
           src={Geego}
           alt="geego circle"
-          width={100} 
-          height={100} 
+          sizes="100%" fill
           />
       </div>
       </div>
