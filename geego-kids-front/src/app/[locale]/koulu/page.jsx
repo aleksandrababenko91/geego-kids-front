@@ -1,9 +1,9 @@
-import Toddlers from '@/components/toddlers-page/Toddlers/Toddlers';
+import Categories from '../../../components/toddlers-page/Categories/Categories';
 
 export default function Koulu() {
   return (
     <main>
-      <Toddlers></Toddlers>
+      <Categories />
     </main>
   );
 }

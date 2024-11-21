@@ -8,9 +8,6 @@ import styles from "./Categories.module.scss";
 import InputSearch from '@/components/shared/InputField/InputSearch';
 import LoadMore from '@/components/shared/LoadMore/LoadMore';
 import ModalSubCategoryGroup from '../../modals/ModalSubCategoryGroup/ModalSubCategoryGroup';
-import Image from 'next/image';
-import Geego from "../../../../public/images/Geego.svg"
-
 
 const Categories = () => {
   const [searchQuery, setSearchQuery] = useState("");
@@ -30,21 +27,9 @@ const Categories = () => {
 
   return (
     <section className={styles.section}>
-      <div className={styles.elips}>
-        <Image
-          className={styles.rotate}
-          src={Geego}
-          alt="geego circle"
-          width={100} 
-          height={100} 
-        />
-      </div>
       <div className={styles.challengesContainer}>
-        <h1 className={styles.title}>GEEGOCITY</h1>
-        <p className={styles.text}>
-          Geegocityssä liikkumisen taidot vahvistuvat ja 
-            <br />lapsi oppii yhdistelemään niitä.
-        </p>
+        <h1 className={styles.title}>KOULU</h1>
+        <p className={styles.title}>Geegon koulu yhdistää oppimisen ja liikkumisen jännittäväksi kokemukseksi.</p>
         <InputSearch
           className={styles.search}
           onChange={(e) => setSearchQuery(e.target.value)}

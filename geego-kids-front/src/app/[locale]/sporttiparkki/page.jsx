@@ -1,9 +1,10 @@
-import Skills from '@/components/skills-page/Skills/Skills';
+import Categories from '@/components/skills-page/Categories/Categories';
 
-export default function SpporttiParkki() {
+
+export default function SporttiParkki() {
   return (
     <main>
-      <Skills></Skills>
+      <Categories />
     </main>
   );
 }

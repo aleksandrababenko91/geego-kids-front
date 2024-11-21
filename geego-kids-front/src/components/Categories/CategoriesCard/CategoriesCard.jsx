@@ -6,6 +6,7 @@ import Image from "next/image";
 const CategoriesCard = ({ image, title, description, cardBackground, url }) => {
   return (
     <article className={styles.article} style={{background: cardBackground}}>
+      <Link href={url} >
       <div className={styles.imageContainer}  >
         <Image
           width={250}
@@ -15,7 +16,7 @@ const CategoriesCard = ({ image, title, description, cardBackground, url }) => {
         />
       </div>
       <div className={styles.content}>
-        <Link href={url} >
+          <div className={`${styles.button} ${styles.customShadow} ${styles.animatePulse}`}>
           <h3 className={styles.heading}>{title} 
             <Image
               src="/images/arrow.svg" 
@@ -25,9 +26,10 @@ const CategoriesCard = ({ image, title, description, cardBackground, url }) => {
               className={styles.arrowIcon}
             />
           </h3>
-        </Link>
+          </div>
         <p className={styles.shortDesc}>{description}</p>
       </div>
+      </Link>
     </article>
   );
 };
