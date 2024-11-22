@@ -9,7 +9,18 @@
     margin-top: 145px;
   }
 }
+.headerContainer{
+  display: flex;
+  flex-direction: row;
+}
 
+.wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
 .challengesContainer {
   max-width: 1680px;
   margin: 0 auto;
@@ -19,9 +30,9 @@
 }
 
 .title {
+  color: var.$primary-footer;
   text-align: center;
   @include mx.apply-font-styles(var.$h4-font);
-  color: black;
   margin-bottom: 20px;
   font-size: 20px;
   @media (min-width: 480px) {
@@ -75,3 +86,67 @@
 .fullHeight {
   min-height: calc(100vh - 160px);
 }
+
+
+.text {
+  max-width: 566px;
+  padding: 20px;
+  color: var.$primary-footer;
+  border: 1px solid var.$primary-border;
+  border-radius: 16px;
+  text-align: center;
+  margin-bottom: 32px;
+  @include mx.apply-font-styles(var.$text-20-font);
+  @media (max-width: 768px) {
+    font-size: 18px;
+  }
+  @media (max-width: 420px) {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+}
+
+.elips {
+  position: relative;
+  height: 40px;
+  width: 40px;
+  left: 10%;
+  margin-bottom: 10px;
+  
+  @media (min-width: 600px) {
+    height: 80px;
+    width: 80px;
+  }
+  @media (min-width: 1800px) {
+    height: 100px;
+    width: 100px;
+  }
+}
+
+@keyframes rotate {
+  from {
+      transform: rotate(0deg);
+  }
+  to {
+      transform: rotate(360deg);
+  }
+}
+.rotate {
+  animation: rotate 15s linear infinite;
+}
+
+//ellipse Animation (rotate)
+.ellipse-animation {
+  animation: drawEllipse 9s ease-in-out forwards;
+  clip-path: inset(0 100% 0 0); 
+}
+
+@keyframes drawEllipse {
+  from {
+      clip-path: inset(0 100% 0 0); 
+  }
+  to {
+      clip-path: inset(0 0 0 0); 
+  }
+}
+

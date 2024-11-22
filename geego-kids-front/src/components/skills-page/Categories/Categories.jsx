@@ -8,6 +8,8 @@ import styles from "./Categories.module.scss";
 import InputSearch from '@/components/shared/InputField/InputSearch';
 import LoadMore from '@/components/shared/LoadMore/LoadMore';
 import ModalSubCategoryGroup from '../../modals/ModalSubCategoryGroup/ModalSubCategoryGroup';
+import Image from 'next/image';
+import Geego from "../../../../public/images/Geego.svg"
 
 const Categories = () => {
   const [searchQuery, setSearchQuery] = useState("");
@@ -27,9 +29,26 @@ const Categories = () => {
 
   return (
     <section className={styles.section}>
+      <div className={styles.wrapper}>
+      <div className={styles.headerContainer}>
+        <div >
+          <h1 className={styles.title} >SPORTTIPARKKI</h1>
+        </div>
+      <div className={styles.elips}>
+        <Image
+          className={styles.rotate}
+          src={Geego}
+          alt="geego circle"
+          sizes="100%" fill
+          />
+      </div>
+      </div>
+      <p className={styles.text}>
+      Monipuolisia ja matalan
+          <br />kynnyksen harjoitteita erilaisiin liikuntalajeihin.
+      </p>
+      </div>
       <div className={styles.challengesContainer}>
-        <h1 className={styles.title}>SPORTTIPARKKI</h1>
-        <p className={styles.title}>Monipuolisia ja matalan kynnyksen harjoitteita erilaisiin liikuntalajeihin.</p>
         <InputSearch
           className={styles.search}
           onChange={(e) => setSearchQuery(e.target.value)}
