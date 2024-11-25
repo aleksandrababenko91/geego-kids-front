@@ -41,20 +41,7 @@ export default function LanguageBtn() {
     return () => window.removeEventListener("click", handleOutsideClick);
   }, [isOpen]);
 
-  const ariaLabelsText = (locale) => {
-    const labels = {
-      en: {
-        btn_lang: "switch language pages. selected language",
-        btn_item: "select the language",
-      },
-      fi: {
-        btn_lang: "vaihda sivun kieltä. valittu kieli",
-        btn_item: "valitse kieli",
-      },
-      
-    };
-    return labels[locale];
-  };
+
 
   return (
     <div className={style.box}>
