@@ -1,9 +1,9 @@
 import createMiddleware from "next-intl/middleware";
-import { locales } from "./i18n";
+
 
 export default createMiddleware({
 // List of the whole localizations
-  locales: locales,
+  locales: ['fi', 'en', 'se'],
 
   // This one is used, when doesnt use any of choosed locals(lang)
   defaultLocale: "fi",

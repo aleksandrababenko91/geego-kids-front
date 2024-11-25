@@ -1,5 +1,29 @@
 {
 	"Header": {
-		"main": "Home"
-	}
+		"geegocity": "Geegocity",
+		"koulu": "School",
+		"sporttiparkki": "Sportpark",
+		"ladata": "Download",
+		"palaute": "Feedback",
+		"btn": "Log Out"
+
+	},
+	"Main": {	
+			"geegocity": "Geegocity",
+			"koulu": "School",
+			"sporttiparkki": "Sportpark",
+			"title": "geego"
+},
+	"Footer": {
+			"geegocity": "Geegocity",
+			"koulu": "School",
+			"sporttiparkki": "Sportpark",
+			"ladata": "Download",
+			"palaute": "Feedback"
+			
+
+},
+	"Hero": {
+			"logo" : "With Geego, children will shine with their skills!"
+}
 }

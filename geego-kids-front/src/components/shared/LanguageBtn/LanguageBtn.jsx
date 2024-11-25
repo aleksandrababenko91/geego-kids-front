@@ -63,7 +63,7 @@ export default function LanguageBtn() {
         onClick={() => setIsOpen(!isOpen)}
         className={clsx(style.btn_lang, isOpen && style._active)}
         type="button"
-        aria-label={ariaLabelsText(currentLocale).btn_lang}
+        // aria-label={ariaLabelsText(currentLocale).btn_lang}
 
       >
         <span>{currentLocale.toUpperCase()}</span>

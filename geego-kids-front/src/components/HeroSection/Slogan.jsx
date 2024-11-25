@@ -1,9 +1,12 @@
 import styles from './HeroSection.module.scss';
+import { useTranslations } from 'next-intl';
 
 const Slogan= () => {
+  const t = useTranslations("Hero");
+
   return (
     <div className={styles.textContainer}>
-        <h1>Geegon kanssa lapset loistavat taidoillaan</h1>
+        <h1>{t("logo")}</h1>
     </div>
   );
 };

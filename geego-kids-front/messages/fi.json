@@ -1,5 +1,28 @@
 {
 	"Header": {
-		"main": "Home"
+		"geegocity": "Geegocity",
+		"koulu": "Koulu",
+		"sporttiparkki": "Sportttiparkki",
+		"ladata": "Ladata tiedosta",
+		"palaute": "Palaute",
+		"btn": "Kirjaudu Ulos"
+
+	},
+	"Main": {	
+			"geegocity": "Geegocity",
+			"koulu": "School",
+			"sporttiparkki": "Sportpark",
+			"title": "feego"
+
+},
+	"Footer": {
+			"geegocity": "Geegocity",
+			"koulu": "School",
+			"sporttiparkki": "Sportpark",
+			"ladata": "Ladata tiedosta",
+			"palaute": "Palaute"
+	},
+	"Hero": {
+			"logo" : "Geegon kanssa lapset loistavat taidoillaan!"
 	}
 }

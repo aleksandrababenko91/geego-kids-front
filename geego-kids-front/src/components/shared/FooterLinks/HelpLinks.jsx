@@ -6,8 +6,12 @@ import styles from "./HelpLinks.module.scss";
 import { createKey } from "../../../lib/createKey";
 import MainLink from "../MainLink/MainLink";
 import stateModalPdf from '@/state/stateModalPdf';
+import { useTranslations } from 'next-intl';
+
 
 const HelpLinks = () => {
+  const t = useTranslations("Footer");
+
   const open = stateModalPdf(state => state.open);
 
 
@@ -19,9 +23,9 @@ const HelpLinks = () => {
           key={createKey()}
           type={type}
           onClick={() => open(url)}
-
+          name={t(name)}
         >
-          {(name)}
+          {t(name)}
         </MainLink>
       ))}
     </div>

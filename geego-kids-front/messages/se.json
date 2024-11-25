@@ -1,5 +1,27 @@
 {
 	"Header": {
-		"main": "Home"
-	}
+		"geegocity": "Geegocity",
+		"koulu": "Skola",
+		"sporttiparkki": "Sportpark",
+		"ladata": "Ladda ner",
+		"palaute": "Feedback",
+		"btn": "Loggar ut"
+	},
+	"Main": {	
+			"geegocity": "Geegocity",
+			"koulu": "Skola",
+			"sporttiparkki": "Sportpark",
+			"title": "creego"
+
+	},
+	"Footer": {
+		"geegocity": "Geegocity",
+		"koulu": "Skola",
+		"sporttiparkki": "Sportpark",
+		"ladata": "Ladda ner",
+		"palaute": "Palaute"
+	},
+	"Hero": {
+	"logo": "Med Geego glänser barnen med sina färdigheter!"
+}
 }
