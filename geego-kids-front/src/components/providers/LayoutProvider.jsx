@@ -3,6 +3,7 @@
 import Footer from "../shared/Footer/Footer";
 import Header from "../shared/Header/Header";
 import ModalDocumentPdf from '../modals/ModalDocumentPdf/ModalDocumentPdf';
+import UseAlert from '@/components/shared/UseAlert/UseAlert';
 
 export default function LayoutProvider({children}) {
 
@@ -13,6 +14,9 @@ export default function LayoutProvider({children}) {
           {children}
           <Footer />  
           <ModalDocumentPdf />
+          <UseAlert />
+
+          
     </div>
   )
 }

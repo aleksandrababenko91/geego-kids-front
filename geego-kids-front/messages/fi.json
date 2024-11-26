@@ -24,5 +24,14 @@
 	},
 	"Hero": {
 			"logo" : "Geegon kanssa lapset loistavat taidoillaan!"
-	}
+	},
+	"NFP_404": {
+	"title": "Valitettavasti etsimäsi sivu on siirretty tai poistettu.",
+	"btn_home": "Palaa etusivulle"
+},
+"Alert": {
+		"title_error": "Sorry, something went wrong",
+		"btn_home": "Try again"
+}
+
 }

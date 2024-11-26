@@ -7,7 +7,7 @@ import { createKey } from '@/lib/createKey';
 import styles from "./Categories.module.scss";
 import InputSearch from '@/components/shared/InputField/InputSearch';
 import LoadMore from '@/components/shared/LoadMore/LoadMore';
-import ModalSubCategoryGroup from '../../modals/ModalSubCategoryGroup/ModalSubCategoryGroup';
+import ModalSubCategoryToddlers from '../../modals/ModalSubCategoryToddlers/ModalSubCategoryToddlers';
 import Image from 'next/image';
 import Geego from "../../../../public/images/Geego.svg"
 
@@ -65,7 +65,7 @@ const Categories = () => {
           )}
         </div>
         <LoadMore onClick={handleLoadMore} />
-        <ModalSubCategoryGroup/>
+        <ModalSubCategoryToddlers/>
       </div>
       
     </section>

@@ -23,5 +23,16 @@
 	},
 	"Hero": {
 	"logo": "Med Geego glänser barnen med sina färdigheter!"
-}
+},
+
+"NFP_404": {
+	"title": "Tyvärr, sidan du letar efter har flyttats eller tagits bort.",
+	"btn_home": "Återgå till startsidan"
+},
+"Alert": {
+		"title_error": "Sorry, something went wrong",
+		"btn_home": "Try again"
+
+	}
+
 }

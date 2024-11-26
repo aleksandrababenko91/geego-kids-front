@@ -7,9 +7,9 @@ import { createKey } from '@/lib/createKey';
 import styles from "./Categories.module.scss";
 import InputSearch from '@/components/shared/InputField/InputSearch';
 import LoadMore from '@/components/shared/LoadMore/LoadMore';
-import ModalSubCategoryGroup from '../../modals/ModalSubCategoryGroup/ModalSubCategoryGroup';
+import ModalSubCategoryChallenges from '../../modals/ModalSubCategoryChallenges/ModalSubCategoryChallenges';
 import Image from 'next/image';
-import Geego from "../../../../public/images/Geego.svg"
+import Geego from "../../../../public/images/Geego.svg";
 
 const Categories = () => {
   const [searchQuery, setSearchQuery] = useState("");
@@ -62,10 +62,11 @@ const Categories = () => {
             ))
           ) : (
             <p>No Categories found.</p> // There will be modal window  "Page undeR DEVELOPMENT"
+
           )}
         </div>
         <LoadMore onClick={handleLoadMore} />
-        <ModalSubCategoryGroup/>
+        <ModalSubCategoryChallenges/>
       </div>
       
     </section>

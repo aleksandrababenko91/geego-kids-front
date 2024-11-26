@@ -14,7 +14,7 @@ const SubCategoryCard = ({ name, sub }) => {
         alt={sub.subName}
         className={styles.iconWrapper}
       />
-    <Link href={`/geegocity/${encodeURIComponent(name)}/${encodeURIComponent(sub.subName)}`}>
+    <Link href={`/koulu/${encodeURIComponent(name)}/${encodeURIComponent(sub.subName)}`}>
       <h2 className={styles.header}>{sub.subName}</h2>
     </Link>
 

@@ -1,7 +1,7 @@
 "use client";
 
 import TaskList from "@/components/toddlers-page/Tasks/TaskList";
-import { categories } from "@/components/toddlers-page/items";
+import { categories } from '../../../../../components/toddlers-page/items';
 
 export default function TaskPage({ params }) {
   const { category, subcategory } = params;
