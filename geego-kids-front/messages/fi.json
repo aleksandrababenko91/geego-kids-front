@@ -32,6 +32,16 @@
 "Alert": {
 		"title_error": "Sorry, something went wrong",
 		"btn_home": "Try again"
+},
+"Login": {
+	"login": "Kirjaudu sisään",
+	"login-code": "Rekisteröityminen:",
+	"login-code-link": " Luo tunnukset ja aktivoi koodi tästä!",
+	"login-note": "Tämä sovellus on tarkoitettu ohjaajien käytettäväksi työasemilla.",
+	"login-username": "Sähköposti / Käyttäjätunnus",
+	"login-password": "Salasana",
+	"login-submit": "Kirjaudu",
+	"login-privacy": "Geego Kids Tietosuojaseloste"
 }
 
 }

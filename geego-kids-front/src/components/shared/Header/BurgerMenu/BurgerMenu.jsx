@@ -5,9 +5,7 @@ import { motion } from 'framer-motion';
 import { useState } from 'react';
 import ButtonUlos from '@/components/shared/ButtonUlos/ButtonUlos';
 
-
-
-export default function Header() {
+export default function BurgerMenu() {
   const [burgerMenuActive, setBurgerMenuActive] = useState(false);
 
   const toggleBurgerMenu = () => {

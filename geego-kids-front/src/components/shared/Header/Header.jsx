@@ -3,11 +3,17 @@ import Menu from "./Menu/Menu";
 import styles from "./Header.module.scss";
 import BurgerMenu from "./BurgerMenu/BurgerMenu";
 import Logo from '../Logo/Logo';
-import ButtonUlos from '../ButtonUlos/ButtonUlos';
+// import ButtonUlos from '../ButtonUlos/ButtonUlos';
+import { useRouter } from "@/navigation"
 import { useTranslations } from 'next-intl';
-
+import MainButton from "../MainButton/MainButton";
 
 const Header = () => {
+  const router = useRouter();
+  const url='/login';
+  const handleClick=()=>{
+    router.push(url)
+  }
   const t = useTranslations("Header");
 
   return (
@@ -15,9 +21,11 @@ const Header = () => {
       <div className={styles.wrapper}>
         <Logo variant="header" className={styles.logo} />
         <Menu />
-        <ButtonUlos className={styles.headerBtn}>
+        <MainButton 
+          onClick={handleClick}
+          className={styles.headerBtn}>
           {t("btn")}
-        </ButtonUlos>
+        </MainButton>
         <LanguageBtn  />
       </div>
       <BurgerMenu />

@@ -40,15 +40,15 @@
   font-size: 20px;
   
   @media (min-width: 500px) {
-    @include mixin.apply-font-styles(var.$h4-font);
+
     font-size: 26px;
   }
   @media (min-width: 768px) {
-    @include mixin.apply-font-styles(var.$h4-font);
+
     font-size: 32px;
   }
   @media (min-width: 900px) {
-    @include mixin.apply-font-styles(var.$h4-font);
+
     font-size: 30px;
   }
   
@@ -78,7 +78,7 @@
   font-weight: 500;
   text-transform: uppercase;
   text-align: center;
-  z-index: 10;
+  z-index: 9;
   transition: all 0.3s;
   @media (min-width: 1024px) {
     right: 0px;

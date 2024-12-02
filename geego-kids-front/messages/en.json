@@ -34,5 +34,15 @@
 		"title_error": "Sorry, something went wrong",
 		"btn_home": "Try again"
 
+},
+"Login": {
+	"login": "login",
+	"login-code": "login",
+	"login-code-link": "login",
+	"login-note": "login",
+	"login-username": "login",
+	"login-password": "login",
+	"login-submit": "login",
+	"login-privacy": "login"
 }
 }

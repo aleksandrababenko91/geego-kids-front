@@ -1,0 +1,11 @@
+@use "../../styles/mixins" as mix;
+@use "../../styles/variables" as var;
+
+.section{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 320px;
+  min-height: 100vh;
+  padding: 10px;
+}
