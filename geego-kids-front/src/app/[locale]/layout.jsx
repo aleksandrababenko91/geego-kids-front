@@ -1,11 +1,8 @@
 import "@/styles/global.scss";
 import QueryProvider from "../../components/providers/queryProvider";
 import LayoutProvider from "../../components/providers/LayoutProvider";
-import { getMessages } from 'next-intl/server';
-// import Loader from "@/components/shared/Loader/Loader";
-import { NextIntlClientProvider } from "next-intl";
-// import { Suspense } from "react";
-
+// import { getMessages } from 'next-intl/server';
+// import { NextIntlClientProvider } from "next-intl";
 
 
 export const metadata = {
@@ -15,22 +12,19 @@ export const metadata = {
 
   export default async function LocaleLayout({ children }) {
 
- const messages = await getMessages();
-
+//  const messages = await getMessages();
 
   return (
-     <NextIntlClientProvider messages={messages}> 
-      <html lang="fi">
+    //  <NextIntlClientProvider messages={messages}> 
+      <html >
         <body>
           <QueryProvider>
               <LayoutProvider>
                 {children} 
-                {/* <Suspense fallback={<Loader />}>
-                </Suspense> */}
               </LayoutProvider>
           </QueryProvider>
         </body>
       </html>
-     </NextIntlClientProvider> 
+    //  </NextIntlClientProvider> 
   );
 }

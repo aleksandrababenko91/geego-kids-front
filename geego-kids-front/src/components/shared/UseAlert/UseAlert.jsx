@@ -1,5 +1,5 @@
 "use client"
-import { useTranslations } from 'next-intl';
+// import { useTranslations } from 'next-intl';
 import styles from './UseAlert.module.scss';
 import clsx from 'clsx';
 import CloseButton from '../CloseButton/CloseButton';
@@ -8,7 +8,7 @@ import { useEffect } from 'react';
 import { createPortal } from "react-dom";
 
 export default function UseAlert({title='', text='', handleClose=()=>{}}){
-  const t = useTranslations("Alert");
+  // const t = useTranslations("Alert");
   const isOpen = stateUseAlert(state => state.isOpen);
   const type = stateUseAlert(state => state.type);
   const autoClose = stateUseAlert(state => state.autoClose);
