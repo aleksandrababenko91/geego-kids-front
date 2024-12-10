@@ -4,7 +4,7 @@ import styles from "./Header.module.scss";
 import BurgerMenu from "./BurgerMenu/BurgerMenu";
 import Logo from '../Logo/Logo';
 import { useRouter } from "@/navigation"
-// import { useTranslations } from 'next-intl';
+import { useTranslations } from 'next-intl';
 import MainButton from "../MainButton/MainButton";
 
 const Header = () => {
@@ -13,7 +13,7 @@ const Header = () => {
   const handleClick=()=>{
     router.push(url)
   }
-  // const t = useTranslations("Header");
+   const t = useTranslations("Header");
 
   return (
     <header className={styles.header}>
@@ -23,7 +23,7 @@ const Header = () => {
         <MainButton 
           onClick={handleClick}
           className={styles.headerBtn}>
-          {/* {t("btn")} */}{"Kirjaudu"}
+          {t("btn")}
         </MainButton>
         <LanguageBtn  />
       </div>

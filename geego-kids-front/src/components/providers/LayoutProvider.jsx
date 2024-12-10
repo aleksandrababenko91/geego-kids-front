@@ -15,8 +15,6 @@ export default function LayoutProvider({children}) {
           <Footer />  
           <ModalDocumentPdf />
           <UseAlert />
-
-          
     </div>
   )
 }

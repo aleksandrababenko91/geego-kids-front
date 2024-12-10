@@ -34,6 +34,7 @@ const LoginForm = () => {
 
       const data = await response.json();
       return data;
+      
     } catch (error) {
       throw new Error(error.message);
     }
@@ -43,12 +44,27 @@ const LoginForm = () => {
     e.preventDefault();
     try {
       const userData = await loginUser({ username, password });
-      setToken(userData.token); 
-      setError(''); 
+
+      // Логируем токен, полученный от сервера
+    console.log("Token received from server:", userData);
+
+    // Сохраняем токен в localStorage
+    localStorage.setItem("token", JSON.stringify({ key: userData }));
+
+    // Логируем сохраненный токен в localStorage
+    console.log("Token saved to localStorage:", JSON.parse(localStorage.getItem("token")));
+
+      setToken(userData);
+      setError("");
     } catch (err) {
-      setError(err.message || ('login-error')); 
+      if (err.message === "login-error") {
+        setError("Неверное имя пользователя или пароль."); // Локализуйте это сообщение
+      } else {
+        setError("Произошла ошибка. Повторите попытку позже."); // Для непредвиденных ошибок
+      }
     }
   };
+  
 
   const handleShowPassword = () => {
     setShowPassword(!showPassword);

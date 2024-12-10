@@ -1,22 +1,20 @@
 import "@/styles/global.scss";
 import QueryProvider from "../../components/providers/queryProvider";
 import LayoutProvider from "../../components/providers/LayoutProvider";
-// import { getMessages } from 'next-intl/server';
-// import { NextIntlClientProvider } from "next-intl";
-
+import { getMessages } from 'next-intl/server';
+import { NextIntlClientProvider } from "next-intl";
 
 export const metadata = {
   title: "Geego Kids",
   description: "Geego Kids web sivu",
 };
 
-  export default async function LocaleLayout({ children }) {
+export default async function LocaleLayout({ children }) {
 
-//  const messages = await getMessages();
-
+const messages = await getMessages();
   return (
-    //  <NextIntlClientProvider messages={messages}> 
-      <html >
+    <NextIntlClientProvider  messages={messages}> 
+      <html lang="fi">
         <body>
           <QueryProvider>
               <LayoutProvider>
@@ -25,6 +23,6 @@ export const metadata = {
           </QueryProvider>
         </body>
       </html>
-    //  </NextIntlClientProvider> 
+    </NextIntlClientProvider> 
   );
 }
