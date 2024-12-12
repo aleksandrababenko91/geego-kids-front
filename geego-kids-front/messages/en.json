@@ -32,11 +32,15 @@
 },
 "Alert": {
 		"title_error": "Sorry, something went wrong",
-		"btn_home": "Try again"
+		"btn_home": "Try again",
+		"title_password": "Sorry, its a wrong paswword or login",
+		"title_success": "Welcome on Board!",
+		"title_generic": "Something went wrong"
+
 
 },
 "Login": {
-	"login": "login",
+	"logout": "Logout",
 	"login-code": "login",
 	"login-code-link": "login",
 	"login-note": "login",

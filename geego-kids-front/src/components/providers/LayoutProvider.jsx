@@ -3,7 +3,8 @@
 import Footer from "../shared/Footer/Footer";
 import Header from "../shared/Header/Header";
 import ModalDocumentPdf from '../modals/ModalDocumentPdf/ModalDocumentPdf';
-import UseAlert from '@/components/shared/UseAlert/UseAlert';
+import UseAlert from '../modals/UseAlert/UseAlert';
+
 
 export default function LayoutProvider({children}) {
 

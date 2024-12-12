@@ -31,10 +31,16 @@
 },
 "Alert": {
 		"title_error": "Sorry, something went wrong",
-		"btn_home": "Try again"
+		"btn_home": "Try again",
+		"title_password": "Sorry, its a wrong paswword or login",
+		"title_success": "Welcome on Board!",
+		"title_generic": "Something went wrong"
+
+
+
 },
 "Login": {
-	"login": "Kirjaudu sisään",
+	"logout": "Logout",
 	"login-code": "Rekisteröityminen:",
 	"login-code-link": " Luo tunnukset ja aktivoi koodi tästä!",
 	"login-note": "Tämä sovellus on tarkoitettu ohjaajien käytettäväksi työasemilla.",
